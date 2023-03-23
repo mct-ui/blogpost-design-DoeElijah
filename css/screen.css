@@ -1,12 +1,28 @@
 /*---------------------------------------/*
  # TOOLS
 /*---------------------------------------*/
+@import url("https://use.typekit.net/rnq6puo.css");
+@import url("https://use.typekit.net/rnq6puo.css");
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
+@font-face {
+  font-family: "Inter Web";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Web";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
 *,
 *:before,
 *:after {
@@ -36,9 +52,13 @@ img {
 html {
   font-size: 100%;
   line-height: 1.5;
-  font-family: Helvetica, arial, sans-serif;
+  font-family: "Droid Serif";
   color: hsl(198.0786026201, 10%, 30%);
   scroll-behavior: smooth;
+}
+
+.s-content * + h2 {
+  margin-top: 3rem;
 }
 
 /*
@@ -58,11 +78,27 @@ html {
     ---
     Default markup for typographic elements
 */
+h1,
+h2,
+h3 {
+  color: hsl(198.0786026201, 10%, 30%);
+  font-family: "Droid Serif";
+}
+
+::-moz-selection {
+  color: hsl(198.0786026201, 10%, 30%);
+}
+
+::selection {
+  color: hsl(198.0786026201, 10%, 30%);
+}
+
 h1 {
   font-size: 1.8020324707rem;
   font-weight: 700;
   line-height: 2rem;
   margin-bottom: 1.5rem;
+  font-family: "Playfair Display";
 }
 
 h2 {
@@ -86,6 +122,8 @@ h6 {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  font-family: "Inter Web";
+  color: hsl(198.0786026201, 10%, 10%);
 }
 
 p,
